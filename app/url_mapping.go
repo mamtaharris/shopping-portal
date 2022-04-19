@@ -1,10 +1,10 @@
 package app
 
-import (
-	controllers "github.com/mamtaharris/shopping-portal/controllers"
-)
+import "github.com/mamtaharris/shopping-portal/controllers"
 
 func mappings() {
+	router.GET("/", controllers.HomeHandler)
+
 	router.POST("/user/create", controllers.CreateUserHandler)
 	router.POST("/user/login", controllers.LoginHandler)
 	router.GET("/user/list", controllers.ListUsersHandler)

@@ -1,10 +1,9 @@
-package controller
-
+package controllers
 
 import (
 	"github.com/gin-gonic/gin"
 )
 
-func ListOrdersHandler(ctx *gin.Context){
-	
+func ListOrdersHandler(ctx *gin.Context) {
+
 }
