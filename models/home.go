@@ -1,7 +1,5 @@
 package models
 
 type HomeResponse struct {
-	DefaultResponse string `json:"data"`
+	DefaultResponse string `json:"dsata"`
 }
-
-// test
