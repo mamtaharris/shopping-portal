@@ -18,10 +18,12 @@ Screenshots For Reference:
 <!--- Attach postman screenshots of postive and negative flow  -->
 
 ## Merge Priority
-- [ ] Low
+<!--- Mark with [x] or check after creation -->
+- [x] Low
 - [ ] Medium
 - [ ] High
 
 ## Delete the branch after merging ?
-- [ ] Yes
+<!--- Mark with [x] or check after creation -->
+- [x] Yes
 - [ ] No
