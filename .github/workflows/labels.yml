@@ -1,2 +1,31 @@
-name: Labeler
-  uses: actions/labeler@v4.0.0
+name: label pr
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+permissions:
+  contents: read
+
+jobs:
+  process:
+    permissions:
+      contents: read  # for actions/labeler to determine modified files
+      pull-requests: write  # for actions/labeler to add labels to PRs
+    name: Process
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label changes scope
+        if: |
+          github.event_name == 'pull_request_target' &&
+            (github.event.action == 'opened' ||
+             github.event.action == 'reopened' ||
+             github.event.action == 'synchronize')
+        uses: actions/labeler@v4.0.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/workflows/generic-pr/label-config.yml
+          sync-labels: true
