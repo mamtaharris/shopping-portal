@@ -3,4 +3,5 @@ enhancement:
 - models/**/*
 
 # Add 'label2' to any file changes within 'example2' folder
-bug: models/*
+bug: 
+- models/*
