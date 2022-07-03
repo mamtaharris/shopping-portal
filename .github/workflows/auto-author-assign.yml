@@ -17,4 +17,3 @@ jobs:
       - uses: toshimaru/auto-author-assign@v1.4.0
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
-            config: .github/auto-author-assign.yml 
