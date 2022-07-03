@@ -1,5 +1,5 @@
 cart:
-- services/cart/**/*
+- *cart*.go
 
 item: 
 - services/item/**/*
