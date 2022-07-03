@@ -1,0 +1,20 @@
+reviewers:
+  defaults:
+    - repository-owners
+
+  groups:
+    repository-owners:
+      - mamtaharris
+      - RejinR
+    core-contributors:
+      - mamtaharris
+    other-contributors:
+      - RejinR
+      
+files:
+  '**':
+    - repository-owners
+  '**/*.go':
+    - core-contributors
+  '**/*.yml':
+    - other-contributors
