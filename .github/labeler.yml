@@ -1,7 +1,5 @@
-# Add 'label1' to any changes within 'example' folder or any subfolderse
 cart:
-- models/**/*
+- services/cart/**/*
 
-# Add 'label2' to any file changes within 'example2' folder
-bug: 
-- models/*
+item: 
+- services/item/**/*
