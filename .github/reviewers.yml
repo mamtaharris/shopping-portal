@@ -5,8 +5,8 @@ reviewers:
   groups:
     repository-owners:
       - mamtaharris
-      - RejinR
     core-contributors:
+      - RejinR
       - mamtaharris
     other-contributors:
       - RejinR
